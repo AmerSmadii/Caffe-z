@@ -33,4 +33,33 @@ userAnswers.push(drinkName);
 
  for (let i = 0; i < userAnswers.length; i++) {
     console.log(userAnswers[i]);}
-  //csascas
+  //csascas3
+
+  const currentDiv = document.getElementById("newdiv");
+  
+  const newContent = document.createElement("p");
+  newContent.innerHTML = thename ;
+  currentDiv.appendChild(newContent);
+
+  const newul = document.createElement("ul");
+
+  const newli =document.createElement("li");
+  newli.innerHTML =gender;
+  newul.appendChild(newli);
+
+  const newli2 =document.createElement("li");
+  newli2.innerHTML=drinkType;
+  newul.appendChild(newli2);
+
+  const newli3 =document.createElement("li");
+  newli3.innerHTML=drinkName;
+  newul.appendChild(newli3);
+
+    currentDiv.appendChild(newContent);
+    currentDiv.appendChild(newul);
+
+ 
+ 
+
+  //done 
+  
