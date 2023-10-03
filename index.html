@@ -6,12 +6,36 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>User Information</h1>
+    <form id="userForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="drink">Is the drink:</label>
+        <input type="checkbox" id="cold" name="drink" value="Cold"> Cold
+        <input type="checkbox" id="hot" name="drink" value="Hot"> Hot<br><br>
+
+        <label for="drinkType">Drink Type:</label>
+        <select id="drinkType" name="drinkType">
+            <option value="Coffee">Coffee</option>
+            <option value="Tea">Tea</option>
+            <option value="Water">Water</option>
+            <option value="Soda">Soda</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>User Information Display</h2>
+    <p><strong>Username:</strong> <span id="displayUsername"></span></p>
+    <p><strong>Age:</strong> <span id="displayAge"></span></p>
+    <p><strong>Drink Type:</strong> <span id="displayDrinkType"></span></p>
 
 
     <div id="newdiv" ></div>
-
-
-
     <script src="sec.js"></script>
    
 </body>
