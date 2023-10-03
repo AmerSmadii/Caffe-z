@@ -1,4 +1,5 @@
 
+/*
 let userAnswers =[];  
 let thename =window.prompt("what is your name","");
 userAnswers.push(thename);
@@ -59,7 +60,31 @@ userAnswers.push(drinkName);
     currentDiv.appendChild(newul);
 
  
- 
+ */
 
-  //done 
+  //done
+  
+
+
+  const form = document.getElementById("userForm");
+
+  form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const username = document.getElementById("username").value;
+      const age = document.getElementById("age").value;
+
+      let drinkType = "";
+      if (document.getElementById("cold").checked) {
+          drinkType = document.getElementById("cold").value;
+      } else if (document.getElementById("hot").checked) {
+          drinkType = document.getElementById("hot").value;
+      } else {
+          drinkType = document.getElementById("drinkType").value;
+      }
+
+      document.getElementById("displayUsername").textContent = username;
+      document.getElementById("displayAge").textContent = age;
+      document.getElementById("displayDrinkType").textContent = drinkType;
+  });
   
